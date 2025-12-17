@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AutoTool Pro – Free Vehicle Fuse Finder</title>
+  <meta name="description" content="Free fuse box locator by vehicle year, make, and model. Download fuse diagrams and reports." />
+
+  <!-- Basic SEO schema placeholder -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AutoTool Pro – Fuse Finder",
+    "applicationCategory": "Automotive",
+    "operatingSystem": "All"
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>AutoTool Pro</h1>
+    <p>Free vehicle tools. Pay only for downloads.</p>
+  </header>
+
+  <main>
+
+    <!-- FUSE FINDER TOOL -->
+    <section class="card">
+      <h2>Fuse Finder</h2>
+      <p>Select your vehicle to locate the fuse box.</p>
+
+      <label for="yearSelect">Year</label>
+      <select id="yearSelect">
+        <option value="">Select Year</option>
+      </select>
+
+      <label for="makeSelect">Make</label>
+      <select id="makeSelect" disabled>
+        <option value="">Select Make</option>
+      </select>
+
+      <label for="modelSelect">Model</label>
+      <select id="modelSelect" disabled>
+        <option value="">Select Model</option>
+      </select>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results" class="card" style="display:none;">
+      <h3>Your Vehicle</h3>
+
+      <img id="carImage" alt="Vehicle image" />
+
+      <p id="fuseInfo"></p>
+
+      <h4>Fuse Diagram (Sample)</h4>
+      <div id="fuseGrid"></div>
+
+      <button id="pdfBtn">Download Fuse Diagram (PDF)</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 AutoTool Pro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
